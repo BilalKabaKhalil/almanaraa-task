@@ -8,7 +8,7 @@ import '../../../controllers/home_controller/home_controller.dart';
 import '../../themes/app_theme.dart';
 import 'widgets/box_buttons_list.dart';
 import 'widgets/expandable_card.dart';
-import 'widgets/search_field.dart';
+import '../../themes/adaptive_search_field.dart';
 import 'widgets/shipment_container.dart';
 
 class HomePage extends GetView<HomeController> {
@@ -22,7 +22,7 @@ class HomePage extends GetView<HomeController> {
         spacing: 0.5.hp,
         children: <Widget>[
           BoxButtonsList(boxButtonsList: controller.boxButtonsList),
-          const SearchField(),
+          const AdaptiveSearchField(),
           Padding(
             padding: EdgeInsets.all(4.0.wp),
             child: Container(

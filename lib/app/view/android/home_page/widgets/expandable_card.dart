@@ -41,8 +41,8 @@ class _ExpandableCardState extends State<ExpandableCard> {
         duration: const Duration(milliseconds: 300),
         height: _isExpanded
             ? widget.shipment.state == ShipmentStateEnum.isConfirmed
-                ? min(63.0.hp, 390)
-                : min(52.0.hp,320)
+                ? min(63.0.hp, 400)
+                : min(52.0.hp,330)
             : min(8.0.hp, 55),
         curve: Curves.easeInOut,
         margin: EdgeInsets.symmetric(
